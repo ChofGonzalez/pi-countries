@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+
+.container{
+    background-color: #e2e2e2;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* background-image: url('vector-set-winter-sports-contains-600w-2090064883.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    text-align: center; */
+}
+
+.link{
+    width: 90px;
+    height: 35px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-family: Titillium Web;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 40px;
+    color: orange;
+    background-color:rgb(114, 112, 112);
+}
+
+
+.titulo{
+    font-family: Titillium Web;
+    font-size: xx-large;
+    color: orange;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    color: orange;
+}
+
+.input{
+    background-color: rgb(0, 0, 0, 0.75);;
+    height: 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+
+.error{
+    font-family: Titillium Web;
+    font-size: 20px;
+    color: red;
+}
+
+.btn{
+    width: 200px;
+    height: 45px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-family: Titillium Web;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 40px;
+    color: orange;
+    background-color:rgb(114, 112, 112);
+    margin-left: 100px;
+}
+
+
+
+/* .img{
+    font-family: Titillium Web;
+    font-size: 10px;
+    color: orange;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align:left;
+    margin-top: 590px;
+    margin-left: 910px;
+} */

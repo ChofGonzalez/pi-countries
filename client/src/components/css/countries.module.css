@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200&display=swap');
+
+.cardContainer{
+    margin-top: 1rem;
+    margin-left: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.span{
+margin-left: 50vh;
+}
+
+.subtitle{
+    color: orange;
+    font-size: 30px;
+    line-height: 1.35em;
+    width: 500px;
+}
+
+.name{
+    color: orangered;
+    float: right;
+    font-size: 14px;
+    font-style: italic;
+    padding: 10px 70px 36px;
+} 

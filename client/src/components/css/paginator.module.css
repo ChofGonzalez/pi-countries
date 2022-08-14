@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+
+/* .contenedor{
+    background-color: black;
+} */
+
+.ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+.li{
+    width: 2rem;
+    height: 1.7rem;
+    text-align: center;
+}
+
+
+.btn{
+    color: orange;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: Titillium Web;
+}
+
+.btn:hover{
+    color: rgb(114, 112, 112);
+    transform: translateY(-0.25em);
+}

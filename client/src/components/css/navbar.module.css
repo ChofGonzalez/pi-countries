@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap');
+
+.navbarcontainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4vw;
+    border-bottom: 1px solid black;
+    box-shadow: -2px 2px 2px black;
+}
+
+
+.btn{
+        width: 150px;
+        height: 35px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        font-family: Titillium Web;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 40px;
+        color: orange;
+        background-color:rgb(114, 112, 112);
+    }
+
+
+/* .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 10px;
+} */
+.btnBack {
+    width: 90px;
+    height: 35px;
+    margin-right: 900px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-family: Titillium Web;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 40px;
+    color: orange;
+    background-color:rgb(114, 112, 112);
+}
+
+
+.span{
+    color: orange;
+    font-family: Titillium Web;
+    font-size: 40px;
+    text-shadow: -2px 2px 2px rgb(0, 0, 0);
+    text-align: center;
+    font-weight: bold;
+}
