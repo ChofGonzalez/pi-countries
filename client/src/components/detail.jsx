@@ -9,10 +9,12 @@ export default function CountryDetail(){
     const [country, setCountry] = useState([])
     let {id} = useParams()
     useEffect(() => {
+        let isMounted = true;   
         axios.get(`/countries/${id}`)
         .then((respuesta) => {
-            setCountry(respuesta.data)
+            if (isMounted) setCountry(respuesta.data)
         })
+        return () => { isMounted = false };
     })
     return (
     <div className={styles.container}>
