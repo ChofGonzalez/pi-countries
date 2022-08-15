@@ -7,7 +7,7 @@ import  AddActiviy  from './components/Activity';
 import Navbar from './components/navbar'
 import LandingPage from './components/landing/Landing';
 import SearchBar from './components/searchbar';
-import NotFound from './components/notfound';
+// import NotFound from './components/notfound';
 
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <LandingPage/>
       </Route>
         <Route exact path='/home'>
-          <Navbar className="nav"/>
+          <Navbar />
           <Order />
           <SearchBar/>
           <Countries/>
@@ -29,9 +29,9 @@ function App() {
         <Route path='/:id'>
           <CountryDetail/>
         </Route>
-        <Route path='*'>
+        {/* <Route path='*'>
          <NotFound/>
-        </Route>
+        </Route> */}
       </Switch>
     </div>
   );
