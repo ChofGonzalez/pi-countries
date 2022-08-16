@@ -82,3 +82,7 @@ export function byActivity(activity){
         payload: activity,
     }
 }
+
+
+//payload es lo que quiero retornar y el value es el valor que recibe la fc
+//las action creators devuelven un paquete de acciones(retornan un objeto que representa una acción) que el reducer recibire. 

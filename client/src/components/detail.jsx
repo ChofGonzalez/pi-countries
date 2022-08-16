@@ -16,6 +16,8 @@ export default function CountryDetail(){
         })
         return () => { isMounted = false };
     })
+
+    
     return (
     <div className={styles.container}>
         <Link className={styles.button} to="/home">Back</Link>
@@ -62,13 +64,7 @@ export default function CountryDetail(){
 /*
  class CountryDetail extends Component {
 
-         function mapStateToProps (state) {
-             return {
-                activity: state.activity,
-                activityXcountry: state.activityXcountry
-             }
-          }
-           
+     
      render() {
          let country = this.props.country
          return (
@@ -81,23 +77,23 @@ export default function CountryDetail(){
                          <p className={style.text}>Capital: {country.capital}</p>
                          <p className={style.text}>Subregion: {country.subregion}</p>
                          <p className={style.text}>Area: {country.area}</p>
-                 <div>
-                     <img className={style.bandera} 
-                             src={country.imagenBandera} 
-                             alt={`${country.nombre} bandera`} />
+                         <div>
+                         <img className={style.bandera} 
+                         src={country.imagenBandera} 
+                         alt={`${country.nombre} bandera`} />
                          </div>
                          </div>
                          <div className={styles.cardActividad}>
-                            {this.props.country_activity.map(p => 
-                                 { if (p.id === country.id) {
-                                     let activity = this.props.actoviry.find(activity => activity.id === p.id)
-                                     return (
+                         {this.props.country_activity.map(p => 
+                            { if (p.id === country.id) {
+                                let activity = this.props.activities.find(activity => activity.id === p.id)
+                                return (
                                          <div key={activity.id} className={style.activityContainer}> 
                                              <p className={styles.textoActividad}> Name: {activity.nombre}</p>
                                              <p className={styles.textoActividad}>Difficulty: {activity.dificultad}</p>
                                              <p className={styles.textoActividad}>Duraction: {activity.duracion} horas</p>
                                              <p className={styles.textoActividad}>Season: {activity.temporada}</p>
-                                         </div>)
+                                             </div>)
                                      } else return null
                                  }
                              )}
@@ -105,7 +101,13 @@ export default function CountryDetail(){
                      </div>
                  )
              }
-         }
-        
+            }
+            
+            function mapStateToProps (state) {
+                return {
+                   activities: state.activities,
+                   activityXcountry: state.activityXcountry
+                }
+             }
          export default connect (mapStateToProps)(Country)
 */

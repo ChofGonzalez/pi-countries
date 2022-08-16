@@ -10,7 +10,7 @@ useEffect(() => {
 
   return (
     <div className={style.container}>
-      <h1 className={style.title}>Countries PI</h1>
+      <h1 className={style.title}>Welcome</h1>
       <br />
       <Link className={style.btn} to='/home'>Let's explore!</Link>
 

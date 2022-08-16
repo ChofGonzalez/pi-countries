@@ -1,11 +1,22 @@
-import { SET_LOADING, FETCH_COUNTRIES, ORDER_ALPHABETICAL, SEARCH_COUNTRIES, ORDER_POPULATION, ORDER_BY_CONTINENT, GET_ACTIVITIES, BY_ACTIVITY } from "../actions";
+import { 
+        SET_LOADING, 
+        FETCH_COUNTRIES, 
+        ORDER_ALPHABETICAL, 
+        SEARCH_COUNTRIES, 
+        ORDER_POPULATION, 
+        ORDER_BY_CONTINENT, 
+        GET_ACTIVITIES, 
+        BY_ACTIVITY 
+    } from "../actions";
 
 const initialState = {
     countries : [],
     filteredCountries: [],
     activities : [],
+    activitiesXCountry:[],
     loading: false,
 }
+
 
 export default function reducer(state = initialState, action){
     switch(action.type){
@@ -82,3 +93,7 @@ export default function reducer(state = initialState, action){
             return state;
     }
 }
+
+
+
+//el reducer va a recibir el estado inicial y con cada nueva accion va a generar un nuevo estado
