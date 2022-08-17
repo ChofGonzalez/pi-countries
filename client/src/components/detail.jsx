@@ -9,7 +9,7 @@ export default function CountryDetail(){
     const [country, setCountry] = useState([])
     let {id} = useParams()
     useEffect(() => {
-        let isMounted = true;   
+        let isMounted = true;
         axios.get(`/countries/${id}`)
         .then((respuesta) => {
             if (isMounted) setCountry(respuesta.data)
@@ -17,7 +17,7 @@ export default function CountryDetail(){
         return () => { isMounted = false };
     })
 
-    
+
     return (
     <div className={styles.container}>
         <Link className={styles.button} to="/home">Back</Link>
@@ -30,7 +30,7 @@ export default function CountryDetail(){
                     <h3>ID: {country.id}</h3>
                     <h3>Habitantes: {country.poblacion} millones</h3>
                     <h3>Capital: {country.capital}</h3>
-                    <h3>Subregion: {country.subregion}</h3>
+                    <h3>Subregion: {country.subregion}</h3> 
                     <h3>Area: {country.area} kilometros</h3>
 
                 </div>
@@ -48,13 +48,13 @@ export default function CountryDetail(){
                     <h2 className={styles.textoActividad}> Duracion: {a.duracion} hs</h2>
                     <h2 className={styles.textoActividad}> Temporada: {a.temporada} </h2>
                 </div>)
-            
+
             })
         : null
         }
         </div>
-        
-       
+
+
     </div>
     )
 }
@@ -64,7 +64,7 @@ export default function CountryDetail(){
 /*
  class CountryDetail extends Component {
 
-     
+
      render() {
          let country = this.props.country
          return (
@@ -78,17 +78,17 @@ export default function CountryDetail(){
                          <p className={style.text}>Subregion: {country.subregion}</p>
                          <p className={style.text}>Area: {country.area}</p>
                          <div>
-                         <img className={style.bandera} 
-                         src={country.imagenBandera} 
+                         <img className={style.bandera}
+                         src={country.imagenBandera}
                          alt={`${country.nombre} bandera`} />
                          </div>
                          </div>
                          <div className={styles.cardActividad}>
-                         {this.props.country_activity.map(p => 
+                         {this.props.country_activity.map(p =>
                             { if (p.id === country.id) {
                                 let activity = this.props.activities.find(activity => activity.id === p.id)
                                 return (
-                                         <div key={activity.id} className={style.activityContainer}> 
+                                         <div key={activity.id} className={style.activityContainer}>
                                              <p className={styles.textoActividad}> Name: {activity.nombre}</p>
                                              <p className={styles.textoActividad}>Difficulty: {activity.dificultad}</p>
                                              <p className={styles.textoActividad}>Duraction: {activity.duracion} horas</p>
@@ -102,7 +102,7 @@ export default function CountryDetail(){
                  )
              }
             }
-            
+
             function mapStateToProps (state) {
                 return {
                    activities: state.activities,

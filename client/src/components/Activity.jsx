@@ -68,10 +68,10 @@ export default function AddActiviy(){
         e.preventDefault();
         setActivity({
             ...activity,
-            [e.target.nombre]: e.target.value
+            [e.target.name]: e.target.value
         })
 
-        let err = validador({...activity, [e.target.nombre]:e.target.value})
+        let err = validador({...activity, [e.target.name]:e.target.value})
         setError(err)
     }
 
@@ -167,8 +167,8 @@ export default function AddActiviy(){
 
             <br/>
             <label>Pais</label>
-            <input className={style.input} onChange={handleChange} name="idpais" type="text" value={activity.pais}/>
-            {error.idpais && <p className={style.error}>{error.pais}</p>} 
+            <input className={style.input} onChange={handleChange} name="pais" type="text" value={activity.pais}/>
+            {error.pais && <p className={style.error}>{error.pais}</p>} 
 
             {/* <label htmlFor="pais"> País </label>
             <input type="text" id="pais" name="pais" onChange={buscado}/>

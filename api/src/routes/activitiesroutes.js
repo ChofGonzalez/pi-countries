@@ -18,8 +18,8 @@ router.get('/', async (req, res) => {
 })
 
 router.post('/', async (req, res) => {
-    const { nombre, dificultad, duracion, temporada, idpais} = req.body
-
+    const { nombre, dificultad, duracion, temporada, pais} = req.body
+        console.log(pais)
     try {
         const newActivity = await Activity.create({
             nombre,
@@ -30,7 +30,7 @@ router.post('/', async (req, res) => {
 
         const pushCountry = await Country.findOne({
             where: {
-                id: idpais,
+                id: pais,
             }
         })
         await newActivity.addCountry(pushCountry) 
